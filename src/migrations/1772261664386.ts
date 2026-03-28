@@ -9,8 +9,8 @@ export class Migration1772261664386 extends Migration {
     surname TEXT NOT NULL,
     patronymic TEXT,
     "is_student" BOOLEAN NOT NULL DEFAULT FALSE,
-    "createdAt" TIMESTAMP NOT NULL DEFAULT NOW(),
-    "updatedAt" TIMESTAMP NOT NULL DEFAULT NOW()
+    "created_at" TIMESTAMP NOT NULL DEFAULT NOW(),
+    "updated_at" TIMESTAMP NOT NULL DEFAULT NOW()
 );
     `);
   }

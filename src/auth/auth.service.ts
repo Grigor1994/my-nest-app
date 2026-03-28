@@ -11,7 +11,8 @@ import { LoginResponse } from './dto/login.response';
 
 @Injectable()
 export class AuthService {
-  constructor(private readonly userService: UserService) {}
+  constructor(private readonly userService: UserService) {
+  }
 
   async register(payload: RegisterDto): Promise<{ message: string }> {
     const hashedPassword = await bcrypt.hash(payload.password, 10);
